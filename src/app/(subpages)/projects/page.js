@@ -5,9 +5,9 @@ import { projectsd } from "../../data";
 
 export default function Home() {
   return (
-    <div className="relative w-full h-screen bg-black text-white">
+    <div className="relative w-full h-screen bg-black text-white overflow-hidden">
       {/* Project List */}
-      <ProjectList projects={projectsd} /> 
+      <ProjectList projects={projectsd} />
     </div>
   );
 }

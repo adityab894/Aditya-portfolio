@@ -10,25 +10,29 @@ const ProjectLayout = ({ id, title, des, img, link, direction }) => {
 
   return (
     <motion.div
-      className="relative w-full h-screen flex items-center justify-center text-white"
+      className="relative w-full h-screen flex items-center justify-center text-white overflow-hidden"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.8 }}
-      transition={{ duration: 0.8 }}
+      viewport={{ once: false, amount: 0.005 }} // Keeps the image visible
+      transition={{ duration: 2 }}
       variants={slideVariants}
     >
-      {/* Background Image */}
-      <Image
-        src={img}
-        alt={title}
-        layout="fill"
-        objectFit="cover"
-        className="absolute -z-10"
-        priority={id === 1} // Prioritize the first project
-      />
+      {/* Background Image Container with 16:9 aspect ratio */}
+      <div className="absolute inset-0 w-full h-full">
+        <div className="relative w-full h-full">
+          <Image
+            src={img}
+            alt={title}
+            layout="fill"
+            objectFit="cover"
+            className="absolute inset-0 -z-10"
+            priority={id === 1} // Prioritize the first project
+          />
+        </div>
+      </div>
 
-      {/* Content */}
-      <div className="text-center px-8 max-w-2xl">
+      {/* Centered Content */}
+      <div className="flex flex-col items-center justify-center text-center px-8 max-w-2xl z-10">
         <h2 className="text-4xl font-bold mb-4">{title}</h2>
         <p className="text-lg mb-6">{des}</p>
         <a
