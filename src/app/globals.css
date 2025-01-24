@@ -29,3 +29,7 @@
     transform: translate(100px, 100px);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,16 +1,20 @@
-"use client"
-import React from 'react'
-import ProjectLayout from './ProjectLayout'
+"use client";
+import React from "react";
+import ProjectLayout from "./ProjectLayout";
 
-
-const ProjectList = ({projects}) => {
+const ProjectList = ({ projects }) => {
   return (
-    <div className="w-full max-w-4xl px-16 space-y-8 flex flex-col items-center">
-      {projects.map((project, index) => {
-        return <ProjectLayout key={index} {...project}  />
-      })}
+    <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
+      {projects.map((project, index) => (
+        <div key={project.id} className="snap-start">
+          <ProjectLayout
+            {...project}
+            direction={index % 2 === 0 ? "left" : "right"} // Alternating directions
+          />
+        </div>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default ProjectList
+export default ProjectList;

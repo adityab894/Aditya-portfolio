@@ -1,25 +1,28 @@
-import Image from "next/image";
-import bg from "../../../public/background/home-background.png"
+"use client";
 import ProjectList from "../../components/projects/Index";
 import { projectsd } from "../../data";
-import RenderModel from "../../components/rendermodel";
-import Staff from "../../components/models/staff";
-
 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between relative ">
-    <Image src={bg} alt ="background-image" fill className="-z-50 w-full h-full object-cover object-center opacity-30"/>
-  
-    <ProjectList projects={projectsd}/>
-    
-    <div className="flex items-center justify-center fixed top-20 left-0 h-screen">
-    <RenderModel>
-      <Staff/>
-    </RenderModel>
+    <div className="relative w-full h-screen bg-black text-white">
+      {/* Project List */}
+      <ProjectList projects={projectsd} /> 
     </div>
-  
-    </main>
   );
 }
+
+
+
+
+// import Image from "next/image";
+// import bg from "../../../../public/background/home-background.png";
+// import RenderModel from "../../components/rendermodel";
+// import Staff from "../../components/models/staff";
+
+// {/* Staff Animation */}
+// <div className="absolute bottom-10 right-10 z-50">
+// <RenderModel>
+//   <Staff />
+// </RenderModel>
+// </div>

@@ -1,16 +1,47 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-const ProjectLayout = ({title, des, img, link}) => {
+const ProjectLayout = ({ id, title, des, img, link, direction }) => {
+  const slideVariants = {
+    hidden: { opacity: 0, x: direction === "left" ? -200 : 200 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
-    <div className="flex items-center justify-between w-full relative rounded-lg overflow-hidden p-6 custom-bg ">
-      <div className='flex items-center justify-center space-x-2'>
-        <h2 className="text-foreground"> {title}</h2>
-        <p className="text-muted"> {des}</p>        
-      </div>
-      <Image src={img} alt={title} width ={200} height={100} />
-    </div>
-  )
-}
+    <motion.div
+      className="relative w-full h-screen flex items-center justify-center text-white"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.8 }}
+      transition={{ duration: 0.8 }}
+      variants={slideVariants}
+    >
+      {/* Background Image */}
+      <Image
+        src={img}
+        alt={title}
+        layout="fill"
+        objectFit="cover"
+        className="absolute -z-10"
+        priority={id === 1} // Prioritize the first project
+      />
 
-export default ProjectLayout
+      {/* Content */}
+      <div className="text-center px-8 max-w-2xl">
+        <h2 className="text-4xl font-bold mb-4">{title}</h2>
+        <p className="text-lg mb-6">{des}</p>
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-lg"
+        >
+          Check Live Site
+        </a>
+      </div>
+    </motion.div>
+  );
+};
+
+export default ProjectLayout;
