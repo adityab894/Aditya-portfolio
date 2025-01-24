@@ -4,7 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import clsx from 'clsx'
 import React, { Suspense } from 'react'
 
-const rendermodel = ({children, className}) => {
+const RenderModel = ({children, className}) => {
   return (
     <Canvas className={clsx ("w-screen h-screen -z-10 relative", className )}>
       <Suspense fallback={null}>
@@ -15,4 +15,4 @@ const rendermodel = ({children, className}) => {
   ) 
 }
 
-export default rendermodel
+export default RenderModel

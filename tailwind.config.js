@@ -17,7 +17,7 @@ module.exports = {
         accent: 'rgb(var(--accent))',
       },
       backgroundImage: {
-        'Firefly-radial': "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(217, 217, 217, 0) 100%)",
+        'firefly-radial': "radial-gradient(50% 50% at 50% 50%, rgba(253, 255, 80, 0.45) 0%, rgba(217, 217, 217, 0) 100%)",
       },
       boxShadow:{
         'glass-insert': 'inset 0 17px 5px -9px rgba(254,254,91, 0.05)',

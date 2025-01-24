@@ -96,28 +96,58 @@ export const BtnList = [
   { label: "Contact", link: "/contact", icon: "contact", newTab: false },
   {
     label: "Github",
-    link: "https://www.github.com/codebucks27",
+    link: "https://www.github.com/adityab894",
     icon: "github",
     newTab: true,
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/codebucks",
+    link: "https://www.linkedin.com/in/aditya894",
     icon: "linkedin",
     newTab: true,
   },
   {
     label: "X",
-    link: "https://www.x.com/code_bucks",
+    link: "https://x.com/adityab894",
     icon: "twitter",
     newTab: true,
   },
   {
     label: "Resume",
-    link: "/resume.pdf",
+    link: "/Aditya_Bisht_Resume.pdf",
     icon: "resume",
     newTab: true,
   },
 ];
 
 
+export const projectsd = [
+  {
+      id: 1,
+      title: "Klimatee - weather app",
+      des: "A web application that shows weather of different locations including your current location",
+      img: "/image1.png",
+      link: "https://klimatee.vercel.app/",
+  },
+  {
+      id: 2,
+      title: "Car Slayer",
+      des: "A blockchain-based NFT game where players can buy, sell, and trade car NFTs using cryptocurrency.",
+      img: "/image2.png",
+      link: "https://car-slayer.vercel.app/",
+  },
+  {
+      id: 3,
+      title: "NFT minting Dapp",
+      des: "A decentralized application that allows users to mint NFTs using the Avalanche blockchain.",
+      img: "/image3.png",
+      link: "https://nft-minting-kappa.vercel.app/",
+  },
+  {
+      id: 4,
+      title: "Stakify",
+      des: "A decentralized application that allows users to stake tokens and earn rewards on the Polygon blockchain.",
+      img: "/image4.png",
+      link: "https://stakify-rose.vercel.app/",
+  },
+];

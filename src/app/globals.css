@@ -14,6 +14,10 @@
 }
 @layer utilities {
 .pause { animation-play-state: paused;}
+
+.custom-bg{
+  @apply bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px] shadow-glass-insert hover:shadow-glass-sm
+}
 }
 
 
@@ -22,6 +26,6 @@
     transform: translate(0,0);
   }
   100% {
-    transform: translate(50px, 50px);
+    transform: translate(100px, 100px);
   }
 }
