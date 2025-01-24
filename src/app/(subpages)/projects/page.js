@@ -1,11 +1,9 @@
 import Image from "next/image";
 import bg from "../../../public/background/home-background.png"
-// import Rendermodel from '@rendermodel'; 
-// import Staff from "@staff";
-import ProjectList from "../components/projects/Index";
-import { projectsd } from "../data";
-import RenderModel from "../components/rendermodel";
-import Staff from "../components/models/staff";
+import ProjectList from "../../components/projects/Index";
+import { projectsd } from "../../data";
+import RenderModel from "../../components/rendermodel";
+import Staff from "../../components/models/staff";
 
 
 
