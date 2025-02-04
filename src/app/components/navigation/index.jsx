@@ -51,7 +51,7 @@
           {
           BtnList.slice(BtnList.length/2, BtnList.length).map((btn, index) => {
 
-            return <NavButton key={btn.label} x={0} y={0} {...btn}  labelDiretion="left"/> 
+            return <NavButton key={btn.label} x={0} y={0} {...btn}  labelDirection="left"/> 
           })       
           }
           </div>      
