@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import bg from "../../public/background/home-background.png"
 import Wizard from "./components/models/wizard";
