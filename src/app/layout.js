@@ -3,6 +3,7 @@ import "./globals.css";
 import clsx from "clsx";
 import FireFliesbg from "./components/FireFliesbg";
 
+
 const inter = Inter({ 
   subsets: ["latin"],
   variable: "--font-inter" 
