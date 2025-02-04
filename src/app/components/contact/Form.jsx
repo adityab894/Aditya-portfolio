@@ -2,16 +2,18 @@
 
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import emailjs from "@emailjs/browser";
+
+
 
 export default function Form() {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = (params) => {
 
-    emailjs
-      .send(process.env.NEXT_PUBLIC_SERVICE_ID, 
+    emailjs.send(
+        process.env.NEXT_PUBLIC_SERVICE_ID, 
         process.env.NEXT_PUBLIC_TEMPLATE_ID, 
-      
+      params,
       {
         publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
         limitRate:{
@@ -19,6 +21,7 @@ export default function Form() {
         }
       }
   )
+  
       .then(
         () => {
           console.log('SUCCESS!');
@@ -29,7 +32,17 @@ export default function Form() {
       );
   };
 
-  const onSubmit = data => console.log(data);
+  const onSubmit = data => {
+    const templateParams = {
+      to_name:"Aditya",
+      from_name: data.name,
+      reply_to : data.email,
+      mobileNumber: data.mobilenumber,
+      message: data.message,
+    };
+    sendEmail(templateParams);
+  };
+    
   console.log(errors);
   
   return (
@@ -42,10 +55,10 @@ export default function Form() {
       <input type="email" placeholder="email" {...register("email", {required: true})} 
         className='w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg'
       />
-      <input type="tel" placeholder="mobilenumber" {...register("mobilenumber", {required: true, max: 10, min: 10})} 
+      <input type="number" placeholder="mobilenumber" {...register("mobilenumber", { required: true, maxLength: 10, minLength: 10 })} 
         className='w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg'
       />
-      <textarea {...register("message", {required:true, maxLength: 250, minLength: 40})} 
+      <textarea {...register("message", {required:true, maxLength: 250, minLength: 5})} 
         className='w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg'
       />
 
