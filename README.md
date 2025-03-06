@@ -54,5 +54,6 @@ Technologies used in the project:
 *   Deployment: Vercel
 
 <h2>💖📬 Connect With Me </h2>  
-🔗 [LinkedIn] (https://www.linkedin.com/in/yourusername/) | 📧 [Email] (mailto:adityabisht894@gmail.com)
+<a href="https://www.linkedin.com/in/aditya894/" target="_blank" style="text-decoration: none;">🔗 LinkedIn</a> |  
+<a href="mailto:adityabisht894@gmail.com" style="text-decoration: none;">📧 Email</a>
 
