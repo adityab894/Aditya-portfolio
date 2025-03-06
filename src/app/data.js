@@ -33,17 +33,17 @@ export const BtnList = [
 export const projectsd = [
   {
       id: 1,
-      title: "Klimatee - weather app",
-      des: "A web application that shows weather of different locations including your current location",
+      title: "Happyfy - Mental Health Companion App",
+      des: "An AI-powered mental health companion for emotion tracking and personalized support.",
       img: "/image1.jpeg",
-      link: "https://klimatee.vercel.app/",
+      link: "https://happyfy-three.vercel.app/",
   },
   {
       id: 2,
-      title: "Car Slayer",
-      des: "A blockchain-based NFT game where players can buy, sell, and trade car NFTs using cryptocurrency.",
+      title: "ChatPlus",
+      des: "A real-time chat application enabling seamless and secure communication.",
       img: "/image2.jpeg",
-      link: "https://car-slayer.vercel.app/",
+      link: "https://chatplus-a3d50.firebaseapp.com/",
   },
   {
       id: 3,
