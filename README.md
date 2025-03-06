@@ -2,16 +2,12 @@
 
 <p id="description">This portfolio website is designed to highlight my technical skills projects and experience in a visually appealing and interactive way. Built with Next.js it ensures fast performance SEO optimization and smooth navigation.</p>
 
-<h2>🚀 Demo</h2>
-
-[https://aditya-bisht-portfolio.vercel.app/](https://aditya-bisht-portfolio.vercel.app/)
 
 <h2>Project Screenshots:</h2>
 
-<img src="![Screenshot 2025-03-06 081244](https://github.com/user-attachments/assets/fac93195-f5bf-4d8c-bce6-906d716d7afe)
-" alt="project-screenshot" width="200" height="50/">
-
-  
+<img src="https://github.com/user-attachments/assets/d3b7d20e-2e6b-429a-a1d1-7474f9372a6e" alt="project-screenshot" width="1000" height="600/">
+<img src="https://github.com/user-attachments/assets/b789a77b-d01b-45fa-8457-c8ee06405b56" alt="project-screenshot" width="1000" height="600/">
+<img src= "https://github.com/user-attachments/assets/c74b69ce-7642-489d-8f1c-d1cf1e4bf0c5" alt="project-screenshot" width="1000" height="600/">
   
 <h2>🧐 Features</h2>
 
@@ -22,24 +18,29 @@ Here're some of the project's best features:
 *   ✅ Responsive Design – Fully mobile-friendly using CSS3 & Tailwind CSS.
 *   ✅ Project Showcase – Dynamic project display with filtering.
 
-<h2>🛠️ Installation Steps:</h2>
+<h2> 🚀 Getting Started </h2>
 
-<p>1. 1️⃣ Clone the Repository</p>
-
-```
-git clone https://github.com/yourusername/portfolio-nextjs.git git clone https://github.com/yourusername/portfolio-nextjs.git cd portfolio-nextjs
-```
-
-<p>2. 2️⃣ Install Dependencies</p>
+<p> 1️⃣ Clone the Repository</p>
 
 ```
-npm install # or yarn install
+git clone https://github.com/yourusername/portfolio-nextjs.git git clone https://github.com/yourusername/portfolio-nextjs.git
+cd portfolio-nextjs
 ```
 
-<p>3. 3️⃣ Run the Development Server</p>
+<p> 2️⃣ Install Dependencies</p>
 
 ```
-npm run dev # or yarn dev
+npm install
+# or
+yarn install
+```
+
+<p>3️⃣ Run the Development Server</p>
+
+```
+npm run dev
+# or
+yarn dev
 ```
 
   
@@ -52,4 +53,6 @@ Technologies used in the project:
 *   Animations: Framer Motion
 *   Deployment: Vercel
 
-<h2>💖Connect with Me?</h2>
+<h2>💖📬 Connect With Me </h2>  
+🔗 [LinkedIn] (https://www.linkedin.com/in/yourusername/) | 📧 [Email] (mailto:adityabisht894@gmail.com)
+
