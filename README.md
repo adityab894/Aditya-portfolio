@@ -8,7 +8,8 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://picsum.photos/1080/1920" alt="project-screenshot" width="200" height="50/">
+<img src="![Screenshot 2025-03-06 081244](https://github.com/user-attachments/assets/fac93195-f5bf-4d8c-bce6-906d716d7afe)
+" alt="project-screenshot" width="200" height="50/">
 
   
   
